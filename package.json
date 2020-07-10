@@ -1,7 +1,8 @@
 {
   "private": true,
-  "name": "sanity-gatsby-blog",
+  "name": "rhythm-n-algos-blog--jamstack",
   "version": "1.0.14",
+  "author": "Joseph P. Pasaoa",
   "scripts": {
     "build": "lerna run build --parallel",
     "dev": "lerna run dev --parallel",
