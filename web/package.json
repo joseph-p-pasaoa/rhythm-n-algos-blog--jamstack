@@ -36,6 +36,8 @@
     "react-helmet": "^5.2.1"
   },
   "dependencies": {
-    "gatsby-image": "^2.0.41"
+    "gatsby-image": "^2.0.41",
+    "gatsby-plugin-manifest": "^2.4.18",
+    "ink": "^2.7.1"
   }
 }

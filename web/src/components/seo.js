@@ -5,6 +5,11 @@ import {StaticQuery, graphql} from 'gatsby'
 import {imageUrlFor} from '../lib/image-url'
 import {buildImageObj} from '../lib/helpers'
 
+const appleTouchIcon = require('../images/apple-touch-icon.png');
+const favicon32 = require('../images/favicon-32x32.png');
+const favicon16 = require('../images/favicon-16x16.png');
+
+
 function SEO ({description, lang, meta, keywords, title, image}) {
   return (
     <StaticQuery
@@ -20,6 +25,25 @@ function SEO ({description, lang, meta, keywords, title, image}) {
             htmlAttributes={{lang}}
             title={title}
             titleTemplate={title === siteTitle ? '%s' : `%s | ${siteTitle}`}
+            link={[
+              {
+                rel: 'apple-touch-icon',
+                sizes: '180x180',
+                href: appleTouchIcon
+              },
+              {
+                rel: 'icon',
+                type: 'image/png',
+                sizes: '32x32',
+                href: favicon32
+              },
+              {
+                rel: 'icon',
+                type: 'image/png',
+                sizes: '16x16',
+                href: favicon16
+              }
+            ]}
             meta={[
               {
                 name: 'description',
