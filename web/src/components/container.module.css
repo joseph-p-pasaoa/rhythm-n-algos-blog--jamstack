@@ -8,5 +8,6 @@
 
   @media (--media-min-small) {
     padding: 2em;
+    padding-top: .33em;
   }
 }
