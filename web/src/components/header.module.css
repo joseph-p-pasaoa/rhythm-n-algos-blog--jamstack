@@ -50,7 +50,7 @@
     fill: inherit;
   }
 
-  @media (--media-min-small) {
+  @media (--media-min-smedium) {
     display: none;
   }
 }
@@ -69,20 +69,24 @@
     text-decoration: none;
   }
 
+  @nest & ul li:last-of-type a::after {
+    display: none;
+  }
+
   @media (hover: hover) {
     @nest & ul li a:hover {
       color: var(--color-accent);
     }
   }
 
-  @media (--media-max-small) {
+  @media (--media-max-smedium) {
     position: absolute;
     background: var(--color-white);
     color: var(--color-black);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
     left: 0;
     right: 0;
-    top: 4.3rem;
+    top: 2.5rem;
 
     @nest & ul {
       padding: 1rem 0;
@@ -93,13 +97,14 @@
     }
   }
 
-  @media (--media-min-small) {
+  @media (--media-min-smedium) {
     display: block;
 
     @nest & ul {
       list-style: none;
       display: flex;
       justify-content: flex-end;
+      align-items: center;
     }
 
     @nest & ul li a {
